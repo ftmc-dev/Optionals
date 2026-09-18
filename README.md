@@ -312,7 +312,7 @@ The exercises in this repository cover:
 
 ---
 
-## 📝 Key Takeaways
+## Key Takeaways
 
 The main things I learned are:
 
