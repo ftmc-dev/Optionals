@@ -6,8 +6,6 @@ This repository contains my learning and practice on **Optional in Java**.
 
 I learned how Optional can be used to represent a value that may be **present or absent**, and how it can help us handle possible missing values without directly working with `null`.
 
----
-
 ## Learning Objectives
 
 The main objectives of this module were to:
@@ -19,8 +17,6 @@ The main objectives of this module were to:
 * Learn how to retrieve and transform values
 * Understand the difference between `map()` and `flatMap()`
 * Practice handling values that may be absent
-
----
 
 ## What I Learned
 
@@ -96,8 +92,6 @@ Optional["JOHN"]
 
 If the Optional is empty, `map()` does not perform the transformation and the result remains empty.
 
----
-
 ### 5. `filter()`
 
 `filter()` allows me to keep a value only if it satisfies a condition.
@@ -111,8 +105,6 @@ name.filter(n -> n.length() > 3);
 ```
 
 If the condition is false, the result becomes an empty Optional.
-
----
 
 ### 6. `orElse()`
 
@@ -132,8 +124,6 @@ Unknown
 
 If the Optional contains a value, that value is returned instead.
 
----
-
 ### 7. `orElseGet()`
 
 `orElseGet()` is similar to `orElse()`, but it receives a function that creates the default value when the Optional is empty.
@@ -143,8 +133,6 @@ optional.orElseGet(() -> createDefaultValue());
 ```
 
 The function is executed only when the Optional does not contain a value.
-
----
 
 ### 8. `orElseThrow()`
 
@@ -159,8 +147,6 @@ User result = user.orElseThrow();
 If the user exists, the user is returned.
 
 If the Optional is empty, an exception is thrown.
-
----
 
 ### 9. `get()`
 
@@ -181,8 +167,6 @@ Optional.empty().get();
 it throws a `NoSuchElementException`.
 
 Therefore, I learned that `get()` should generally be avoided when there are safer alternatives such as `orElse()` or `orElseThrow()`.
-
----
 
 ### 10. `map()` vs `flatMap()`
 
@@ -211,8 +195,6 @@ Using `flatMap()` avoids this extra Optional:
 Optional<Address>
 ```
 
----
-
 ## Optional as a Method Return Type
 
 Optional is mainly useful as a **method return type** when a method may not have a value to return.
@@ -224,8 +206,6 @@ Optional<User> findUserById(Long id);
 ```
 
 This tells the code using the method that the user may exist or may not exist.
-
----
 
 ## Optional as a Field
 
@@ -252,8 +232,6 @@ public Optional<String> getNickname() {
 ```
 
 Optional is therefore mainly used to communicate that a **method result may be absent**.
-
----
 
 ## Main Example
 
@@ -290,8 +268,6 @@ String
 
 This example helped me understand how several Optional methods can be combined to safely handle a value that may be absent.
 
----
-
 ## Practice
 
 The exercises in this repository cover:
@@ -309,8 +285,6 @@ The exercises in this repository cover:
 * `flatMap()`
 * Handling `null`
 * Understanding good and bad uses of Optional
-
----
 
 ## Key Takeaways
 
