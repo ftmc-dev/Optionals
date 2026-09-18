@@ -36,8 +36,6 @@ or:
 Optional.empty()
 ```
 
----
-
 ### 2. `Optional.of()`
 
 `of()` is used when I am sure that the value is not `null`.
@@ -47,8 +45,6 @@ Optional<String> name = Optional.of("John");
 ```
 
 If the value passed to `of()` is `null`, it throws a `NullPointerException`.
-
----
 
 ### 3. `Optional.ofNullable()`
 
@@ -69,8 +65,6 @@ If the value is `null`:
 ```text
 Optional.empty()
 ```
-
----
 
 ### 4. `map()`
 
